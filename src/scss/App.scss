@@ -1,0 +1,40 @@
+@import "./generic/reset.scss";
+@import "./settings/colors.scss";
+@import "./settings/fonts.scss";
+@import "./settings/mixins.scss";
+@import "./elements/article_section.scss";
+@import "./elements/header_menu.scss";
+@import "./elements/buttons.scss";
+@import "./elements/calculator_kcal.scss";
+@import "./elements/healthy_eating.scss";
+@import "./elements/dietitian_visit.scss";
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-repeat: repeat-y;
+  @include notebook {
+    background-image: url("../images//blueberries-3380697_1920.jpg");
+    background-position: inherit;
+    background-size: inherit;
+    height: 140vh;
+  }
+  background-image: url("../images/blueberries-3380697_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

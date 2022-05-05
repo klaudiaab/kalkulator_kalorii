@@ -1,0 +1,74 @@
+.dietitianVisit {
+  margin-top: -69px;
+  @include notebook {
+    margin-top: -600px;
+    margin-left: 400px;
+    height: 100px;
+    display: flex;
+  }
+  .visit_preparation {
+    @include notebook {
+      margin-right: 40px;
+      margin-top: 250px;
+      margin-left: -400px;
+    }
+  }
+  h1 {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60px;
+    display: flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    @include notebook {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  .dietitian_article {
+    list-style-type: disclosure-closed;
+    margin-top: 6px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @include notebook {
+      margin-top: 30px;
+    }
+    li {
+      font-size: 1rem;
+      padding: 7px;
+      margin-left: 30px;
+      color: $color-basic2;
+      @include notebook {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 10px;
+      }
+      span {
+        font-weight: bold;
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+  h2 {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60px;
+    margin-top: 30px;
+    display: flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    @include notebook {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+  }
+}

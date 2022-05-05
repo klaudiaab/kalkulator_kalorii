@@ -1,0 +1,219 @@
+.calculator_kcal {
+  height: 1000px;
+  @include notebook {
+    display: flex;
+    margin-top: 400px;
+  }
+  &_section {
+    @include notebook {
+      display: flex;
+      margin: auto;
+      justify-content: space-evenly;
+      display: flex;
+      position: relative;
+      .kcal {
+        @include notebook {
+          max-width: 500px;
+          width: 100%;
+          margin-right: 20px;
+        }
+      }
+      .bmi {
+        @include notebook {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+    }
+    form {
+      @include notebook {
+        height: 1050px;
+      }
+      height: auto;
+      background-color: white;
+      border-radius: 50px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      h1 {
+        font-size: 1.7rem;
+        font-weight: bolder;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .buttons {
+        justify-content: center;
+        display: flex;
+        button {
+          @include notebook {
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          margin-bottom: 10px;
+          margin-top: 10px;
+          width: 145px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 1rem;
+          height: 49px;
+
+          &:nth-of-type(1) {
+            @include notebook {
+              background-position: 5% center;
+            }
+
+            background-position: 1%center;
+            background-repeat: no-repeat;
+            background-image: url(https://1000dni.pl/themes/custom/tysiacdni/assets/images/ico-bmi-f.png?version=1584107824425);
+          }
+          &:nth-of-type(2) {
+            @include notebook {
+              background-position: 5% center;
+            }
+            margin-left: 10px;
+            padding-left: 23px;
+            background-position: 1% center;
+            background-repeat: no-repeat;
+            background-image: url(https://1000dni.pl/themes/custom/tysiacdni/assets/images/ico-bmi-m.png?version=1584107824425);
+          }
+        }
+      }
+      .inputs_form {
+        input {
+          &:hover {
+            border: 2px solid grey;
+            box-shadow: 3px 5px 10px $color-basic2;
+          }
+          display: block;
+          font-size: 1.1rem;
+          height: 40px;
+          border-radius: 8px;
+          text-align: center;
+          margin: auto;
+          width: 50%;
+        }
+
+        label {
+          @include notebook {
+            margin-top: 30px;
+            margin-bottom: 10px;
+          }
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-size: 1.5rem;
+          margin-left: 10px;
+          text-align: center;
+          &:nth-child(7) {
+            margin-top: 30px;
+            margin-bottom: -30px;
+          }
+        }
+
+        select,
+        .result_calculation {
+          border-radius: 8px;
+          height: 50px;
+          margin: auto;
+        }
+        select {
+          @include notebook {
+            margin-top: 40p;
+          }
+          display: block;
+          margin-top: 35px;
+          width: 300px;
+          font-size: 1.1rem;
+          text-align: center;
+          position: relative;
+        }
+
+        // buttons -> oblicz BMR
+
+        .result_calculation {
+          display: block;
+          background-color: $color-buttons;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          color: white;
+          border: none;
+          font-size: 1.5rem;
+          height: 51px;
+          margin-bottom: 10px;
+          width: 160px;
+          margin-top: 10px;
+          @include notebook {
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+        }
+      }
+      .list,
+      .errors_kcal {
+        justify-content: center;
+        display: flex;
+      }
+      .list {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        .calculation_information {
+          ul {
+            li {
+              span {
+                font-weight: bold;
+                color: $color-basic;
+                display: flex;
+                justify-content: center;
+              }
+              @include notebook {
+                margin-bottom: 20px;
+              }
+              margin-bottom: 10px;
+              &:nth-of-type(2) {
+                @include notebook {
+                  margin-top: 30px;
+                }
+                margin-top: 10px;
+                list-style: outside;
+              }
+              &:nth-of-type(3) {
+                list-style: outside;
+              }
+            }
+          }
+        }
+      }
+      .errors_kcal {
+        display: block;
+        font-size: 1.2rem;
+        margin: auto;
+        width: 300px;
+        color: red;
+        li {
+          margin-bottom: 10px;
+          margin-top: 10px;
+          text-align: center;
+          @include notebook {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+        @include notebook {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

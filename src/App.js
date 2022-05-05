@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component, useState } from "react";
+import CalculatorBMI from "./calculatorBMI/CalculatorBMI";
+import CalculatorKcal from "./calculatorKcal/CalculatorKcal";
+import { BrowserRouter as Routes, Route, Link, Switch } from "react-router-dom";
+import HealthyEating from "./HealtyEating";
+import DietitianVisit from "./DietitianVisit";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/healthyeating">
+          <HealthyEating></HealthyEating>
+        </Route>
+        <Route path="/dietitianvisit">
+          <DietitianVisit></DietitianVisit>
+        </Route>
+        <Route path="/main">
+          <CalculatorKcal></CalculatorKcal>
+          <CalculatorBMI></CalculatorBMI>
+        </Route>
+      </Routes>
+    </>
   );
 }
 

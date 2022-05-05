@@ -1,0 +1,50 @@
+.healthyEating {
+  margin-top: -69px;
+
+  @include notebook {
+    margin-top: -600px;
+    margin-left: 400px;
+    height: 100px;
+  }
+  h1 {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60px;
+    display: flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    @include notebook {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  .health_article {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @include notebook {
+      margin-top: 30px;
+    }
+    li {
+      margin-top: 5px;
+      font-size: 1rem;
+      padding: 10px;
+      color: $color-basic2;
+      @include notebook {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 20px;
+      }
+      span {
+        font-weight: bold;
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
