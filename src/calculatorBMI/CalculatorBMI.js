@@ -128,11 +128,11 @@ function CalculatorBMI() {
       <form>
         <h1>Oblicz swoje BMI</h1>
         <div className="inputs_form">
-          <label>Podaj swoją wagę w kg</label>
+          <label>Podaj swój wiek</label>
           <BmiAge value={bmiAge} onInputClick={setBmiAge}></BmiAge>
-          <label>Podaj swoją wagę w kg</label>
+          <label>Podaj swój wzrost</label>
           <BmiHeight value={bmiHeight} onInputClick={setBmiHeight}></BmiHeight>
-          <label>Podaj swoją wagę w kg</label>
+          <label>Podaj swoją wagę</label>
           <BmiWeight value={bmiWeight} onInputClick={setBmiWeight}></BmiWeight>
           {setErrorsBmi && <Errors errors={errorsBmi}></Errors>}
           <button className="result_calculation" onClick={submitBmi}>

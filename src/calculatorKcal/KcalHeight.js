@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function KcalHeight({ value, onInputClick }) {
   return (
@@ -15,4 +15,3 @@ function KcalHeight({ value, onInputClick }) {
 }
 
 export default KcalHeight;
-

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 function KcalGender({ value, gender, setGender, setIsToogleColor }) {
   const chooseGenderMale = (e) => {

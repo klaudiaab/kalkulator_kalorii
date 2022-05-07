@@ -5,8 +5,6 @@ import KcalHeight from "./KcalHeight";
 import KcalWeight from "./KcalWeight";
 import KcalActivityLevel from "./KcalActivityLevel";
 import KcalGender from "./KcalGender";
-import ReactLoading from "react-loading";
-import Loading from "./Loading";
 
 const getData = (
   height,

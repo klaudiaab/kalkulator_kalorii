@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import CalculatorBMI from "./calculatorBMI/CalculatorBMI";
 import CalculatorKcal from "./calculatorKcal/CalculatorKcal";
-import { BrowserRouter as Routes, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import HealthyEating from "./HealtyEating";
 import DietitianVisit from "./DietitianVisit";
 import Header from "./Header";
 import Article from "./Article";
-import Height from "./calculatorBMI/BmiHeight";
 
 function App() {
   return (
