@@ -124,7 +124,7 @@ function CalculatorKcal() {
   };
 
   return (
-    <div className="kcal">
+    <div className="kcal" id="kcal">
       <form>
         <h1>Oblicz swoje zapotrzebowanie kaloryczne</h1>
         <div className="inputs_form">

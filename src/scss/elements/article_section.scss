@@ -1,47 +1,57 @@
-.article_section {
-  color: black;
-  .article_container {
-    h1 {
-      @include notebook {
-        font-size: 3.5rem;
-        margin-top: 60px;
+.calculator_kcal {
+  &_section {
+    width: 100%;
+    .article_section {
+      color: black;
+      .article_container {
+        @include notebook {
+          width: 90%;
+        }
+        h1 {
+          @include notebook {
+            font-size: 3.5rem;
+            margin-top: 80px;
+          }
+          @include mobile {
+            display: flex;
+            justify-content: center;
+          }
+          margin-top: 130px;
+          margin-bottom: 15px;
+          font-size: 25px;
+        }
       }
-      margin-top: 77px;
-      margin-bottom: 15px;
-      font-size: 25px;
-    }
-  }
-  p {
-    color: $color-basic2;
-    background-color: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    padding: 20px;
-    box-shadow: 3px 10px 20px $color-basic;
+      p {
+        color: $color-basic2;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 3px 10px 20px $color-basic;
+        margin-top: 30px;
+        font-size: 20px;
+        @include notebook {
+          height: 200px;
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          width: 350px;
+          margin-top: 30px;
+          border-radius: 20px;
+          text-align: center;
+          background-color: white;
+        }
+      }
+      @include notebook {
+        margin-top: 24px;
+        font-weight: bold;
+      }
+      @include mobile {
+        margin-top: -57px;
 
-    font-size: 20px;
-    @include notebook {
-      height: 200px;
-      display: flex;
-      align-items: center;
-      font-size: 1.5rem;
-      width: 350px;
-      margin-top: 30px;
-      border-radius: 20px;
-      text-align: center;
-      background-color: white;
+        margin-bottom: 100px;
+      }
     }
-  }
-  @include notebook {
-    margin-top: 24px;
-    font-weight: bold;
-  }
-  @include mobile {
-    margin-top: -57px;
-
-    width: 286px;
-    margin-bottom: 100px;
   }
 }

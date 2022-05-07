@@ -8,7 +8,7 @@
 @import "./elements/calculator_kcal.scss";
 @import "./elements/healthy_eating.scss";
 @import "./elements/dietitian_visit.scss";
-
+@import "./elements/calculatorKcalBmi_section.scss";
 body {
   height: 100vh;
   margin: 0;
@@ -35,6 +35,5 @@ a {
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
 }

@@ -1,16 +1,20 @@
 .dietitianVisit {
   margin-top: -69px;
   @include notebook {
-    margin-top: -600px;
     margin-left: 400px;
     height: 100px;
     display: flex;
+    .first_visit {
+      @include notebook {
+        margin-top: -200px;
+      }
+    }
   }
   .visit_preparation {
     @include notebook {
       margin-right: 40px;
-      margin-top: 250px;
       margin-left: -400px;
+      margin-top: 100px;
     }
   }
   h1 {
@@ -25,6 +29,7 @@
     align-items: center;
     @include notebook {
       padding: 20px;
+      margin-left: 100px;
       font-size: 1.5rem;
     }
   }
@@ -34,9 +39,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    @include notebook {
-      margin-top: 30px;
-    }
+
     li {
       font-size: 1rem;
       padding: 7px;

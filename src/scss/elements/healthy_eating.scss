@@ -1,6 +1,4 @@
 .healthyEating {
-  margin-top: -69px;
-
   @include notebook {
     margin-top: -600px;
     margin-left: 400px;
@@ -27,7 +25,8 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     @include notebook {
-      margin-top: 30px;
+      margin-top: 400px;
+      margin-left: 80px;
     }
     li {
       margin-top: 5px;

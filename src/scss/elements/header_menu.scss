@@ -1,97 +1,103 @@
-.header {
-  @include notebook {
-    background-color: $color-grey;
-    height: 150px;
-  }
-
-  @include mobile {
-    display: flex;
-  }
-  @include notebook {
-    box-shadow: 5px 15px 18px $color-solid-grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &_menu {
-    nav {
-      margin-top: 15px;
-      height: 100%;
-      width: 100%;
-      padding-bottom: 20px;
-      .menu_mobile {
-        display: none;
+.calculator_kcal {
+  width: 100%;
+  &_section {
+    .header {
+      @include notebook {
+        background-color: $color-grey;
+        height: 150px;
+        margin: 0 auto;
+        box-shadow: 5px 15px 18px $color-solid-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include mobile {
+        display: flex;
+        margin: 0 auto;
+      }
+      &_menu {
         position: absolute;
-        top: -9999px;
-        left: -9999px;
-        opacity: 0;
-        @include mobile {
-          &:checked {
-            ~ .menu_toggle {
-              span {
-                transition: 0.3s all ease-in-out;
-                &:nth-child(1) {
-                  transform: rotate(45deg) translate(2px, 5px);
-                }
-                &:nth-child(2) {
-                  opacity: 0;
-                }
-                &:nth-child(3) {
-                  transform: rotate(-45deg) translate(2px, -5px);
-                }
-                &:last-child {
-                  margin-bottom: 0;
-                }
-              }
+        margin-left: 20px;
+        nav {
+          margin-top: 15px;
+          height: 100%;
+          width: 100%;
+          padding-bottom: 20px;
+          .menu_mobile {
+            @include notebook {
+              display: none;
             }
-            ~ .header_nav {
-              .nav_element {
-                &:hover {
-                  background-color: $color-grey;
+
+            opacity: 0;
+            @include mobile {
+              &:checked {
+                ~ .menu_toggle {
+                  span {
+                    transition: 0.3s all ease-in-out;
+                    &:nth-child(1) {
+                      transform: rotate(45deg) translate(2px, 5px);
+                    }
+                    &:nth-child(2) {
+                      opacity: 0;
+                    }
+                    &:nth-child(3) {
+                      transform: rotate(-45deg) translate(2px, -5px);
+                    }
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+                ~ .header_nav {
+                  .nav_element {
+                    &:hover {
+                      background-color: $color-grey;
+                    }
+                  }
+                  display: block;
+                  background-color: white;
+
+                  width: 400px;
+                  left: 0px;
+                  top: 60px;
+                  font-size: 25px;
                 }
               }
-              display: block;
-              background-color: white;
-              position: absolute;
-              width: 100%;
-              left: 0px;
-              top: 60px;
-              font-size: 25px;
             }
           }
-        }
-      }
-      .menu_toggle {
-        @include notebook {
-          display: none;
-        }
-
-        span {
-          width: 20px;
-          height: 2px;
-          display: block;
-          margin-bottom: 3px;
-          background-color: black;
-        }
-        p {
-          margin-top: 7px;
-        }
-      }
-      .header_nav {
-        display: none;
-        @include notebook {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .nav_element {
-          padding: 22px;
-          .nav_link {
-            color: $color-basic;
+          .menu_toggle {
             @include notebook {
-              font-weight: 700;
-              font-family: $fontLobster;
-              font-size: 28px;
+              display: none;
+            }
+
+            span {
+              width: 20px;
+              height: 2px;
+              display: block;
+              margin-bottom: 3px;
+              background-color: black;
+            }
+            p {
+              margin-top: 7px;
+            }
+          }
+          .header_nav {
+            display: none;
+            @include notebook {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+            .nav_element {
+              padding: 22px;
+              .nav_link {
+                color: $color-basic;
+                @include notebook {
+                  font-weight: 700;
+                  font-family: $fontLobster;
+                  font-size: 28px;
+                }
+              }
             }
           }
         }

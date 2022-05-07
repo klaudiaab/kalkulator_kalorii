@@ -1,0 +1,7 @@
+.calculatorKcalBmi_section {
+  @include notebook {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

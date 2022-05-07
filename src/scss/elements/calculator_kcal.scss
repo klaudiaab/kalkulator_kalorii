@@ -1,15 +1,15 @@
 .calculator_kcal {
   height: 1000px;
   @include notebook {
-    display: flex;
-    margin-top: 400px;
+    widh: 100%;
   }
   &_section {
+    width: 100%;
+    display: block;
     @include notebook {
-      display: flex;
       margin: auto;
       justify-content: space-evenly;
-      display: flex;
+      display: block;
       position: relative;
       .kcal {
         @include notebook {
